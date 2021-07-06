@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+
+            a.fixed_top{
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 200px;
+            }
+
+            a.fixed_bot{
+                position: fixed;
+                right: 0;
+                top: 10;
+                width: 200px;
+            }
+
+            .center-screen{
+                display:  flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 100vh;
+            }
+
+            input.rounded {
+                border: 1px solid black;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+
+                -moz-box-shadow: 2px 2px 3px;
+                -webkit-box-shadow: 2px 2px 3px;
+                box-shadow: 2px 2px 3px;
+
+                font-size: 15px;
+                padding: 4px 7px;
+                outline: 0;
+                -webkit-appearance: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Puts the links in the top right corner -->
+        <div>
+            <a class="fixed_top" href="/Users/scuev/Desktop/CS50/index1.html">Google Image Search</a>
+            <br>
+            <a class="fixed_bot" href="/Users/scuev/Desktop/CS50/index2.html">Google Advanced Search</a>
+        </div>
+
+        <!-- Centers the Google form and title -->
+        <div class="center-screen">
+            <form action="https://google.com/search">
+                <h1>
+                    <!-- The 'spans' are making each letter a color when given the desired color hex code. -->
+                    <span style="color: #0066FF">G</span>
+                    <span style="color: #D0312D">o</span>
+                    <span style="color: #FFD300">o</span>
+                    <span style="color: #0066FF">g</span>
+                    <span style="color: #3CB043">l</span>
+                    <span style="color: #D0312D">e</span>
+                </h1>
+
+                <input type="text" name="q" class="rounded">
+                <br>
+                <br>
+                <input type="submit" name="btnK" value="Google Search" class="button">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky" class="button">
+            </form>
+
+        </div>
+    </body>
+</html>

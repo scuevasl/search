@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+
+        <style>
+            a.fixed_top{
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 200px;
+            }
+
+            .left-screen{
+                top: 20;
+                align-items: left;
+                text-align: left;
+            }
+
+            input.rounded {
+                border: 1px solid black;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+
+                -moz-box-shadow: 2px 2px 3px;
+                -webkit-box-shadow: 2px 2px 3px;
+                box-shadow: 2px 2px 3px;
+
+                font-size: 15px;
+                padding: 4px 7px;
+                outline: 0;
+                -webkit-appearance: none;
+            }
+
+            .form-submit-button {
+                 background: #0066FF;
+                 color: white;
+                 border-style: outset;
+                 border-color: #0066FF;
+                 height: 35px;
+                 width: 125px;
+                 text-shadow:none;
+            }
+        </style>
+    </head>
+    <body>
+
+         <!-- Puts the links in the top right corner -->
+        <div>
+            <a class="fixed_top" href="/Users/scuev/Desktop/CS50/index-redo.html">Google Search</a>
+        </div>
+
+
+        <form action="https://www.google.com/search">
+            <div class="left-screen">
+
+
+                <h1>
+                    <span style="color: #D0312D">Advanced Search</span>
+                </h1>
+
+                <h3>Find pages with...</h3>
+                
+                <p>all these words:</p>
+                <input type="text" name="as_q">
+                <br>
+                <br>
+                <p>this exact word or phrase:</p>
+                <input type="text" name="as_epq">
+                <br>
+                <br>
+                <p>any of these words:</p>
+                <input type="text" name="as_oq">
+                <br>
+                <br>
+                <p>none of these words:</p>
+                <input type="text" name="as_eq">
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Advanced Search" class="form-submit-button">
+            </div>
+        </form>
+    </body>
+</html>
